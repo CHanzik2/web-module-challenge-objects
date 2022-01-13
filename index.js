@@ -104,9 +104,14 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 function addReview(array, name, rating, feedback){
   /*Your Code Here */
-  return(name, rating, feedback);
+  for(let i = 0; i < array.length; i++){
+    if(array[i].name === name){
+      array.push(array.name, array.rating, array.feedback);
+    }
+  }
+  return array;
 }
-
+console.log('task 5', addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
 
