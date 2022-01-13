@@ -48,6 +48,10 @@ const burger = {
   price: 18, 
   category: "Lunch", 
   
+  // the method goes here
+  discount: function(){
+    // this.price
+  }
 }
 
 
@@ -68,7 +72,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log(reviews);
 
 
 
@@ -91,8 +95,9 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
+function addReview(array, name, rating, feedback){
   /*Your Code Here */
+  array.push({});
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -105,7 +110,7 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-
+// array / number
 function getReviewByIndex(/*Your code here*/) {
   /*Your code here*/
 }
@@ -123,9 +128,8 @@ Use the getLastReview function below to do the following:
   
   For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays".
 */
-
-
-function getLastReview(/*Your code here*/) {
+// array[array.length - 1];
+function getLastReview(array) {
   /*Your code here*/
 } 
 
