@@ -104,11 +104,7 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 function addReview(array, name, rating, feedback){
   /*Your Code Here */
-  for(let i = 0; i < array.length; i++){
-    if(array[i].name === name){
-      array.push(array.name, array.rating, array.feedback);
-    }
-  }
+  array.push({ name, rating, feedback });
   return array;
 }
 console.log('task 5', addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'));
@@ -124,9 +120,9 @@ Use the getReviewByIndex function below to do the following:
 
 // array / number
 function getReviewByIndex(array, num) {
-  
+  return `${array[num].name} gave the restaurant a ${array[num].rating} star review, and their feedback was: ${array[num].feedback}`;
 }
-
+console.log('task 6', getReviewByIndex(reviews, 4));
 
   
 
@@ -142,9 +138,10 @@ Use the getLastReview function below to do the following:
 */
 // array[array.length - 1];
 function getLastReview(array) {
-  /*Your code here*/
+  return `${array[array.length - 1].name} gave the restaurant a ${array[array.length - 1].rating} star review, and their feedback was: ${array[array.length - 1].feedback}`;
+  
 } 
-
+console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
